@@ -7,11 +7,11 @@ using Social.Data;
 
 #nullable disable
 
-namespace Social.Data.Migrations
+namespace Social.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230819061627_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230821062333_New")]
+    partial class New
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,12 @@ namespace Social.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("BLOB");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("UserName")
                         .HasColumnType("TEXT");

@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@beeman/angular-serve-nodemon": "^1.0.0",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^11.0.2",
@@ -36,6 +37,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemon": "^3.0.1",
     "typescript": "~5.1.3"
   }
 }
